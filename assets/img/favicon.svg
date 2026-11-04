@@ -1,11 +1,9 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    
-    <g>
-        <!-- Círculo principal que envolve os triângulos -->
-        <circle cx="100" cy="100" r="90" fill="#ea580c"/>
-        <!-- Triângulos brancos contidos no interior -->
-        <polygon points="100,100 61.3,164.8 138.7,164.8" fill="#ffffff" />
-        <polygon points="100,100 61.3,164.8 138.7,164.8" fill="#ffffff" transform="rotate(120 100 100)" />
-        <polygon points="100,100 61.3,164.8 138.7,164.8" fill="#ffffff" transform="rotate(240 100 100)" />
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bunker AppSec">
+    <rect width="200" height="200" rx="44" fill="#050505"/>
+    <circle cx="100" cy="100" r="70" fill="#ea580c"/>
+    <g fill="#ffffff">
+        <polygon points="100,100 69.9,150.4 130.1,150.4"/>
+        <polygon points="100,100 69.9,150.4 130.1,150.4" transform="rotate(120 100 100)"/>
+        <polygon points="100,100 69.9,150.4 130.1,150.4" transform="rotate(240 100 100)"/>
     </g>
 </svg>

@@ -1,92 +1,408 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BNK AppSec - Segurança e Performance em Desenvolvimento Web.">
-    <title>BNK AppSec | Segurança em cada linha</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Bunker AppSec (BNK) — projeto de extensão do IFSP Guarulhos que desenvolve aplicações web seguras desde a concepção, unindo engenharia de software, Security by Design e colaboração aberta.">
+    <meta name="theme-color" content="#050505">
+    <meta name="author" content="Bunker AppSec">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bunker AppSec | Segurança desde a concepção">
+    <meta property="og:description" content="Projeto de extensão do IFSP Guarulhos que constrói aplicações web seguras desde a concepção.">
+    <meta property="og:url" content="https://bunker.simplifica.gru.br/">
+    <meta name="twitter:card" content="summary">
+
+    <title>Bunker AppSec | Segurança desde a concepção</title>
+
+    <link rel="canonical" href="https://bunker.simplifica.gru.br/">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="noise-overlay"></div>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="noise-overlay" aria-hidden="true"></div>
 
-    <nav class="navbar" id="navbar">
+    <header class="navbar" id="navbar">
         <div class="container nav-content">
-            <a href="#" class="logo">
-                <img src="assets/img/logo.svg" alt="BNK AppSec" height="32">
+            <a href="#inicio" class="logo" aria-label="Bunker AppSec — início">
+                <img src="assets/img/logo.svg" alt="Bunker AppSec" height="34">
             </a>
-            <ul class="nav-links">
-                <li><a href="#plataforma">A Plataforma</a></li>
-                <li><a href="#arquitetura">Arquitetura</a></li>
-                <li><a href="#equipe">Equipe</a></li>
-                <li><a href="#contato" class="btn-outline">Iniciar Projeto</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <header class="hero">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="container hero-content">
-            <div class="badge fade-in">Web Application Security</div>
-            <h1 class="fade-in delay-1">Crie o futuro.<br>Proteja <span class="highlight">cada passo.</span></h1>
-            <p class="fade-in delay-2">Não adicione segurança depois. Desenvolvemos aplicações web e plataformas SaaS onde a performance extrema e a proteção de dados nascem integradas ao código base.</p>
-            <div class="hero-actions fade-in delay-3">
-                <a href="#arquitetura" class="btn-primary">Ver Arquitetura</a>
-                <a href="#contato" class="btn-secondary">Falar com Especialista</a>
-            </div>
+            <button class="nav-toggle" id="navToggle" type="button"
+                    aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#projeto">O projeto</a></li>
+                    <li><a href="#extensao">Extensão</a></li>
+                    <li><a href="#processo">Processo</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li>
+                        <a class="btn-outline" href="https://github.com/dahlinpereira/bnk-appsec"
+                           target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section id="arquitetura" class="features">
-        <div class="container">
-            <div class="section-header slide-up">
-                <h2>Engenharia de ponta a ponta</h2>
-                <p>Nossa stack tecnológica resolve problemas complexos com elegância.</p>
-            </div>
-            
-            <div class="bento-grid">
-                <div class="bento-card col-span-2 slide-up delay-1">
-                    <div class="card-content">
-                        <div class="icon">🛡️</div>
-                        <h3>DevSecOps Nativo</h3>
-                        <p>A segurança é o nosso alicerce. Auditoria de código em tempo real, proteção contra ataques DDoS, injeções SQL e vulnerabilidades zero-day implementadas diretamente na infraestrutura da sua aplicação.</p>
-                    </div>
-                </div>
-                
-                <div class="bento-card slide-up delay-2">
-                    <div class="card-content">
-                        <div class="icon">⚡</div>
-                        <h3>Edge Performance</h3>
-                        <p>Aplicações ultrarrápidas, distribuídas e otimizadas para entregar milissegundos de latência em qualquer dispositivo.</p>
-                    </div>
+    <main id="conteudo">
+        <!-- Hero -->
+        <section class="hero" id="inicio">
+            <div class="orb orb-1" aria-hidden="true"></div>
+            <div class="orb orb-2" aria-hidden="true"></div>
+
+            <div class="container hero-content">
+                <span class="badge fade-in">Projeto de extensão · IFSP Guarulhos</span>
+
+                <h1 class="fade-in delay-1">
+                    Segurança não é uma etapa.<br>
+                    É o <span class="highlight">ponto de partida.</span>
+                </h1>
+
+                <p class="fade-in delay-2">
+                    O Bunker AppSec é um projeto de extensão que constrói aplicações web seguras
+                    desde a concepção — unindo engenharia de software, Security by Design
+                    e colaboração aberta.
+                </p>
+
+                <div class="hero-actions fade-in delay-3">
+                    <a href="#projeto" class="btn-primary">Conhecer o projeto</a>
+                    <a href="https://github.com/dahlinpereira/bnk-appsec" class="btn-secondary"
+                       target="_blank" rel="noopener noreferrer">
+                        Ver no GitHub <span aria-hidden="true">↗</span>
+                    </a>
                 </div>
 
-                <div class="bento-card slide-up delay-3">
-                    <div class="card-content">
-                        <div class="icon">🧩</div>
-                        <h3>Arquitetura Escalável</h3>
-                        <p>Sistemas modulares preparados para crescer junto com o seu volume de usuários sem gargalos de banco de dados.</p>
-                    </div>
+                <ul class="hero-tags fade-in delay-4" aria-label="Destaques do projeto">
+                    <li>Security by Design</li>
+                    <li>Código aberto</li>
+                    <li>Colaboração com Git</li>
+                </ul>
+
+                <p class="hero-status fade-in delay-4">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    Repositório público ·
+                    <a href="https://github.com/dahlinpereira/bnk-appsec"
+                       target="_blank" rel="noopener noreferrer">github.com/dahlinpereira/bnk-appsec</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- O projeto -->
+        <section class="section" id="projeto">
+            <div class="container">
+                <div class="section-header slide-up">
+                    <span class="eyebrow">O projeto</span>
+                    <h2>Segurança em cada linha,<br>do primeiro commit à entrega.</h2>
+                    <p class="lead">
+                        Não existe botão de “adicionar segurança” no final. O Bunker AppSec trata
+                        proteção como requisito de projeto: entra na conversa, na arquitetura,
+                        no código e na entrega.
+                    </p>
                 </div>
 
-                <div class="bento-card col-span-2 slide-up delay-4">
-                    <div class="card-content">
-                        <div class="icon">📱</div>
-                        <h3>Design Autêntico & UI/UX</h3>
-                        <p>Nossas interfaces não são apenas seguras, são projetadas para retenção máxima. Criamos experiências imersivas, responsivas e alinhadas ao comportamento do usuário moderno, transformando acessos em resultados concretos.</p>
+                <div class="bento-grid">
+                    <article class="bento-card col-span-2 slide-up delay-1">
+                        <div class="card-content">
+                            <div class="icon" aria-hidden="true">🛡️</div>
+                            <h3>Aplicação web segura</h3>
+                            <p>
+                                Desenvolvemos uma aplicação web real, com foco em confiabilidade,
+                                proteção de dados e decisões técnicas que se sustentam.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bento-card slide-up delay-2">
+                        <div class="card-content">
+                            <div class="icon" aria-hidden="true">🧱</div>
+                            <h3>Security by Design</h3>
+                            <p>
+                                Segurança é requisito, não correção. Ela nasce na modelagem
+                                e acompanha cada escolha de arquitetura.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bento-card slide-up delay-1">
+                        <div class="card-content">
+                            <div class="icon" aria-hidden="true">🧪</div>
+                            <h3>Boas práticas</h3>
+                            <p>
+                                Código limpo, revisão por pares e documentação para manter
+                                o projeto compreensível e evolutivo.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bento-card slide-up delay-2">
+                        <div class="card-content">
+                            <div class="icon" aria-hidden="true">🌿</div>
+                            <h3>Git e GitHub</h3>
+                            <p>
+                                Branches, commits e Pull Requests. O mesmo fluxo de trabalho
+                                de um time profissional.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bento-card slide-up delay-3">
+                        <div class="card-content">
+                            <div class="icon" aria-hidden="true">🔁</div>
+                            <h3>Segurança no ciclo</h3>
+                            <p>
+                                Controles de segurança em cada etapa: requisito, desenvolvimento,
+                                revisão e entrega.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bento-card col-span-2 slide-up delay-1">
+                        <div class="card-content">
+                            <div class="icon" aria-hidden="true">🎓</div>
+                            <h3>Extensão e formação</h3>
+                            <p>
+                                O aprendizado sai do campus: documentação aberta, troca com a
+                                comunidade e formação de novos desenvolvedores.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="bento-card slide-up delay-2">
+                        <div class="card-content">
+                            <div class="icon" aria-hidden="true">🔒</div>
+                            <h3>Repositório seguro</h3>
+                            <p>
+                                Sem senhas, tokens ou chaves privadas no código.
+                                Segurança também é disciplina de time.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <blockquote class="principle slide-up">
+                    <p>“Desenvolvimento de software com segurança desde a concepção.”</p>
+                    <cite>Princípio do Bunker AppSec</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Extensão -->
+        <section class="section section-alt" id="extensao">
+            <div class="container">
+                <div class="section-header slide-up">
+                    <span class="eyebrow">Extensão</span>
+                    <h2>Do campus para a comunidade.</h2>
+                    <p class="lead">
+                        Segurança da informação não deve ficar presa na sala de aula. O projeto
+                        existe para transformar aprendizado em código aberto, documentação
+                        acessível e troca real com a comunidade.
+                    </p>
+                </div>
+
+                <div class="extension-grid">
+                    <article class="extension-card slide-up delay-1">
+                        <span class="card-number" aria-hidden="true">01</span>
+                        <h3>Formação</h3>
+                        <p>
+                            Compartilhar o que aprendemos por meio de documentação, conteúdo
+                            aberto e conversas sobre segurança web.
+                        </p>
+                    </article>
+
+                    <article class="extension-card slide-up delay-2">
+                        <span class="card-number" aria-hidden="true">02</span>
+                        <h3>Código aberto</h3>
+                        <p>
+                            Manter o projeto público para que outras pessoas possam estudar,
+                            usar como referência e contribuir.
+                        </p>
+                    </article>
+
+                    <article class="extension-card slide-up delay-3">
+                        <span class="card-number" aria-hidden="true">03</span>
+                        <h3>Segurança aplicada</h3>
+                        <p>
+                            Mostrar na prática como uma aplicação nasce segura — e não como
+                            um remendo aplicado no final.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="extension-note slide-up">
+                    <strong>Por que extensão?</strong>
+                    <p>
+                        Porque o conhecimento só faz sentido quando circula. O Bunker AppSec leva
+                        o debate sobre segurança para fora do campus e traz a realidade de volta
+                        para o código.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Processo -->
+        <section class="section" id="processo">
+            <div class="container">
+                <div class="section-header slide-up">
+                    <span class="eyebrow">Processo</span>
+                    <h2>Um fluxo aberto e verificável.</h2>
+                    <p class="lead">
+                        O projeto segue um fluxo de trabalho colaborativo, com decisões
+                        registradas e código revisado antes de chegar à branch principal.
+                    </p>
+                </div>
+
+                <ol class="steps">
+                    <li class="step slide-up delay-1">
+                        <span class="step-number" aria-hidden="true">01</span>
+                        <div>
+                            <h3>Requisito seguro</h3>
+                            <p>
+                                Antes de escrever código, entendemos o que precisa ser protegido
+                                e quais riscos precisam ser tratados.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="step slide-up delay-2">
+                        <span class="step-number" aria-hidden="true">02</span>
+                        <div>
+                            <h3>Desenvolvimento em branches</h3>
+                            <p>
+                                Cada mudança nasce isolada, com commits pequenos e mensagens
+                                que explicam o porquê.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="step slide-up delay-3">
+                        <span class="step-number" aria-hidden="true">03</span>
+                        <div>
+                            <h3>Revisão por Pull Request</h3>
+                            <p>
+                                Outra pessoa lê, questiona e aprova. A revisão é parte do
+                                processo, não uma formalidade.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="step slide-up delay-4">
+                        <span class="step-number" aria-hidden="true">04</span>
+                        <div>
+                            <h3>Entrega documentada</h3>
+                            <p>
+                                O que muda é registrado no README e no histórico. O projeto
+                                precisa ser compreensível sem depender de memória.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Stack -->
+        <section class="section section-alt" id="stack">
+            <div class="container">
+                <div class="section-header slide-up">
+                    <span class="eyebrow">Stack</span>
+                    <h2>Tecnologias que sustentam o projeto.</h2>
+                    <p class="lead">
+                        Uma base enxuta, escolhida para aprender fundamentos de verdade —
+                        e documentar cada evolução.
+                    </p>
+                </div>
+
+                <div class="stack-grid">
+                    <article class="stack-card slide-up delay-1">
+                        <span class="stack-mark" aria-hidden="true">H5</span>
+                        <h3>HTML5</h3>
+                        <p>Estrutura semântica e acessível, com foco em conteúdo bem organizado.</p>
+                    </article>
+
+                    <article class="stack-card slide-up delay-2">
+                        <span class="stack-mark" aria-hidden="true">C3</span>
+                        <h3>CSS3</h3>
+                        <p>Layout responsivo, design system em variáveis e atenção à legibilidade.</p>
+                    </article>
+
+                    <article class="stack-card slide-up delay-3">
+                        <span class="stack-mark" aria-hidden="true">JS</span>
+                        <h3>JavaScript</h3>
+                        <p>Interações leves, sem dependências desnecessárias e com foco em performance.</p>
+                    </article>
+
+                    <article class="stack-card slide-up delay-4">
+                        <span class="stack-mark" aria-hidden="true">Git</span>
+                        <h3>Git &amp; GitHub</h3>
+                        <p>Versionamento, branches e Pull Requests como parte do processo de engenharia.</p>
+                    </article>
+                </div>
+
+                <p class="stack-note slide-up">
+                    Novas tecnologias serão documentadas conforme a evolução do projeto.
+                </p>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section" id="contato">
+            <div class="container">
+                <div class="cta-card slide-up">
+                    <span class="eyebrow">Acompanhe</span>
+                    <h2>O código está aberto.<br>A evolução também.</h2>
+                    <p>
+                        Explore o repositório, leia as decisões do projeto e acompanhe
+                        as próximas entregas.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://github.com/dahlinpereira/bnk-appsec" class="btn-primary"
+                           target="_blank" rel="noopener noreferrer">
+                            Abrir repositório <span aria-hidden="true">↗</span>
+                        </a>
+                        <a href="https://github.com/dahlinpereira/bnk-appsec/blob/main/README.md"
+                           class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Ler o README
+                        </a>
+                    </div>
+
+                    <div class="team-line">
+                        <p>Desenvolvido em equipe por estudantes do IFSP Guarulhos.</p>
+                        <a href="https://github.com/dahlinpereira/bnk-appsec/graphs/contributors"
+                           target="_blank" rel="noopener noreferrer">
+                            Ver contribuidores <span aria-hidden="true">↗</span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container footer-content">
-            <img src="assets/img/logo.svg" alt="BNK AppSec" height="24">
-            <p>&copy; 2026 BNK AppSec - IFSP Guarulhos. Segurança em cada linha.</p>
+            <div class="footer-brand">
+                <img src="assets/img/logo.svg" alt="Bunker AppSec" height="28">
+                <p>Segurança em cada linha.</p>
+            </div>
+
+            <nav class="footer-links" aria-label="Links do rodapé">
+                <a href="https://github.com/dahlinpereira/bnk-appsec"
+                   target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/dahlinpereira/bnk-appsec/blob/main/README.md"
+                   target="_blank" rel="noopener noreferrer">README</a>
+                <a href="#inicio">Voltar ao topo ↑</a>
+            </nav>
+
+            <p class="footer-copy">© <span id="year">2026</span> Bunker AppSec (BNK) · IFSP Guarulhos</p>
         </div>
     </footer>
 

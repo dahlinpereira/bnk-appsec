@@ -1,19 +1,19 @@
-<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="140" viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bunker AppSec">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&amp;display=swap');
-        .title { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-weight: 600; font-size: 46px; fill: #111827; }
-        .slogan { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 16px; fill: #111827; letter-spacing: 0.5px; font-weight: 500; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&amp;display=swap');
+        .brand { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 42px; fill: #ffffff; letter-spacing: -1.2px; }
+        .slogan { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 11px; fill: #a1a1aa; letter-spacing: 2.6px; }
     </style>
-    <rect x="20" y="20" width="560" height="110" rx="55" ry="55" fill="#f8f9fa" stroke="#111827" stroke-width="3"/>
-    
+
     <g>
-        <!-- Círculo principal que envolve os triângulos -->
-        <circle cx="90" cy="75" r="40" fill="#ea580c"/>
-        <!-- Triângulos brancos contidos no interior -->
-        <polygon points="90,75 72.8,103.8 107.2,103.8" fill="#f8f9fa" />
-        <polygon points="90,75 72.8,103.8 107.2,103.8" fill="#f8f9fa" transform="rotate(120 90 75)" />
-        <polygon points="90,75 72.8,103.8 107.2,103.8" fill="#f8f9fa" transform="rotate(240 90 75)" />
+        <circle cx="58" cy="70" r="38" fill="#ea580c"/>
+        <g fill="#ffffff">
+            <polygon points="58,70 41.7,97.4 74.3,97.4"/>
+            <polygon points="58,70 41.7,97.4 74.3,97.4" transform="rotate(120 58 70)"/>
+            <polygon points="58,70 41.7,97.4 74.3,97.4" transform="rotate(240 58 70)"/>
+        </g>
     </g>
-    <text x="160" y="92" class="title">Bunker AppSec</text>
-    <text x="195" y="165" class="slogan">Segurança em cada linha</text>
+
+    <text x="116" y="70" class="brand">Bunker AppSec</text>
+    <text x="118" y="96" class="slogan">SEGURANÇA EM CADA LINHA</text>
 </svg>
