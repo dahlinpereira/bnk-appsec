@@ -1187,7 +1187,7 @@ a {
     pointer-events: none;
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.8) 0%, rgba(5, 5, 5, 0.55) 45%, rgba(5, 5, 5, 0.95) 100%),
-        url("../assets/img/equipe-ifsp.jpg") center / cover no-repeat;
+        url("../assets/img/equipe-ifsp.jpg?v=4") center / cover no-repeat;
 }
 
 .hero-photo .hero-content {
