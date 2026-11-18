@@ -1598,3 +1598,218 @@ a {
         padding: 120px 0 3rem;
     }
 }
+
+/* =========================================================
+   Página Personas
+   ========================================================= */
+.persona-list {
+    display: grid;
+    gap: 2rem;
+}
+
+.persona-detail {
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 2.5rem;
+    padding: 2rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 18px;
+    transition: border-color 0.3s ease;
+}
+
+.persona-detail:hover {
+    border-color: var(--border-strong);
+}
+
+.persona-detail > img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 14px;
+    align-self: start;
+}
+
+.persona-label {
+    display: inline-block;
+    color: var(--primary-orange);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+}
+
+.persona-detail h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin-bottom: 0.4rem;
+}
+
+.persona-detail-role {
+    color: var(--primary-orange-light) !important;
+    font-size: 0.9rem !important;
+    font-weight: 600;
+    margin-bottom: 1.8rem !important;
+}
+
+.persona-detail-body h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    margin: 1.6rem 0 0.6rem;
+}
+
+.persona-detail-body h3:first-of-type {
+    margin-top: 0;
+}
+
+.persona-detail-body p,
+.persona-detail-body li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.75;
+}
+
+.persona-detail-body ul {
+    padding-left: 1.2rem;
+    margin: 0 0 0.6rem;
+}
+
+.persona-detail-body li + li {
+    margin-top: 0.3rem;
+}
+
+/* =========================================================
+   Página Contato
+   ========================================================= */
+.contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4rem;
+    align-items: start;
+}
+
+.contact-info h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+}
+
+.contact-info > p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.contact-address {
+    font-style: normal;
+    color: var(--text-secondary);
+    line-height: 1.9;
+    padding-left: 1.2rem;
+    border-left: 2px solid var(--primary-orange);
+}
+
+.contact-note {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.contact-note i {
+    color: var(--primary-orange);
+    margin-right: 0.4rem;
+}
+
+.contact-form-wrap {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 18px;
+    padding: 2.2rem;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1.4rem;
+}
+
+.form-field {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.form-field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    background: var(--bg-base);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font: inherit;
+    resize: vertical;
+    transition: border-color 0.25s ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--primary-orange);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.form-submit {
+    width: 100%;
+    cursor: pointer;
+}
+
+.form-status {
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.form-status-ok {
+    background: rgba(34, 197, 94, 0.12);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    color: #86efac;
+}
+
+.form-status-erro {
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    color: #fca5a5;
+}
+
+@media (max-width: 900px) {
+    .persona-detail {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
+
+    .persona-detail > img {
+        max-width: 320px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}

@@ -281,3 +281,22 @@ document.addEventListener("DOMContentLoaded", () => {
         setupMatrix();
     }
 });
+
+// Feedback do formulário de contato (enviar.php redireciona com ?status=ok|erro)
+document.addEventListener("DOMContentLoaded", () => {
+    const status = document.getElementById("formStatus");
+    if (!status) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const result = params.get("status");
+
+    if (result === "ok") {
+        status.textContent = "Mensagem enviada com sucesso! O Scrum Master responderá em breve.";
+        status.className = "form-status form-status-ok";
+        status.hidden = false;
+    } else if (result === "erro") {
+        status.textContent = "Não foi possível enviar a mensagem. Verifique os campos e tente novamente.";
+        status.className = "form-status form-status-erro";
+        status.hidden = false;
+    }
+});

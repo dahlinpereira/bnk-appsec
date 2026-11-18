@@ -12,6 +12,15 @@ O BNK AppSec é um projeto acadêmico desenvolvido em equipe, com foco na constr
 - Promover colaboração utilizando Git e GitHub.
 - Integrar segurança ao ciclo de desenvolvimento.
 
+## Páginas do portal
+
+O portal do Bunker AppSec é formado por quatro páginas:
+
+- `index.html` — página principal: equipe, missão/visão/valores, ações de extensão e localização;
+- `quem-somos.html` — história da startup e detalhes de cada ação de extensão;
+- `personas.html` — perfil profissional de cada integrante da equipe;
+- `contato.html` — formulário com Nome, E-mail, Assunto e Conteúdo, enviado por `enviar.php` para o Scrum Master.
+
 ## Tecnologias
 
 - HTML5
