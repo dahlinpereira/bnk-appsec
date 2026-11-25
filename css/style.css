@@ -265,20 +265,6 @@ a {
     text-align: center;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-    background-size: 64px 64px;
-    -webkit-mask-image: radial-gradient(ellipse 70% 65% at 50% 45%, #000 30%, transparent 78%);
-    mask-image: radial-gradient(ellipse 70% 65% at 50% 45%, #000 30%, transparent 78%);
-    z-index: 0;
-    pointer-events: none;
-}
-
 .orb {
     position: absolute;
     border-radius: 50%;
